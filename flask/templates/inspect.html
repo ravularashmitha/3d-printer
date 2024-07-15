@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Inner Page - Remember Bootstrap Template</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="../static/assets/img/icon.jpg" rel="icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/assets/img/icon.jpg" rel="icon">
+  <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="../static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Remember
+  * Template URL: https://bootstrapmade.com/remember-free-multipurpose-bootstrap-template/
+  * Updated: Mar 17 2024 with Bootstrap v5.3.3
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="d-flex align-items-center">
+    <div class="container d-flex justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="inspect.html">3D printer Material Prediction</a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto" href="/">Home</a></li>
+          <li><a class="nav-link scrollto" href="#hero">about</a></li>
+          <li><a class="nav-link scrollto" href="#predict">Predict</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+  <!--Hero section-->
+ <section id="hero" class="d-flex align-items-center justify-content-center">
+  <div class="container" data-aos="fade-up">
+
+    <div class="row justify-content-center" data-aos="fade-up" data-aos-delay="150">
+      <div class="col-xl-6 col-lg-8">
+        <h1>Material Prediction<span>.</span></h1>
+        
+      </div>
+    </div>
+
+  </div>
+</section> <!--End Hero section-->
+
+ <main id="main">
+
+   <!-- ======= About Section ======= -->
+   <section id="predict" class="predict">
+     <center>
+           <h3>3D Printer Material Prediction</h3>
+           <br>
+           <p class="fst-italic">
+
+             <div class="container" >
+               <form name='' method="POST" action="/home">
+                 <div class="row">
+                   <div class="col-sm">
+                     <label for="layer_height"><b>layer_height</b></label><br>
+                     <input type="float" name="feature1"><br>
+                     <br>
+   
+                     <label for="wall_thickness"><b>wall_thickness</b></label><br>
+                     <input type="number" name="feature2"><br>
+                     <br>
+   
+                     <label for="infill_density"><b>infill_density</b></label><br>
+                     <input type="number" name="feature3"><br>
+                     <br>
+                   </div>
+                   <div class="col-sm">
+                     <label for="infill_pattern"><b>infill_pattern</b></label><br>
+                     <input type="text" name="feature4"><br>
+                     <br>
+   
+                     <label for="nozzle_temperature"><b>nozzle_temperature</b></label><br>
+                     <input type="number" name="feature5"><br>
+                     <br>
+   
+                     <label for="bed_temperature"><b>bed_temperature</b></label><br>
+                     <input type="number" name="feature6"><br>
+                     <br>
+                   </div>
+   
+                   <div class="col-sm">
+                     <label for="print_speed"><b>print_speed</b></label><br>
+                     <input type="number" name="feature7"><br>
+                     <br>
+   
+                     <label for="fan_speed"><b>fan_speed</b></label><br>
+                     <input type="number" name="feature8"><br>
+                     <br>
+
+                     <label for="roughness"><b>roughness</b></label><br>
+                     <input type="number" name="feature9"><br>
+                   </div>
+
+                   <div class="col-sm">
+                    <label for="tension_strenght"><b>tension_strenght</b></label><br>
+                    <input type="number" name="feature10"><br>
+                    <br>
+          
+                      <label for="elongation"><b>elongation</b></label><br>
+                      <input type="float" name="feature11"><br>
+                      <br>
+                  </div>
+                   <br>
+                   <br>
+                   <br>
+                 </div>
+                 <button>
+                 <a href="{{url_for('predict')}}" class="btn btn-success">submit</a>
+                 </button>
+               </form>
+             </div>
+
+                 <!-- <h1>The water quality potability status: <b style="color:Purple">{{predict}}</b></h1> -->
+           </p>
+         </Center>
+
+
+         </div>
+       </div>
+
+     </div>
+   </section><!-- End About Section -->
+   
+   
+  </main>
+  <div id="preloader"></div>
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="../static/assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="../static/assets/vendor/aos/aos.js"></script>
+  <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="../static/assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="../static/assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../static/assets/js/main.js"></script>
+
+</body>
+
+</html>
